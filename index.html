@@ -1,1 +1,487 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avaneesh Sirikonda | Portfolio</title>
+  <meta name="description" content="Avaneesh Sirikonda — Student builder focused on robotics, CAD, and practical software projects." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Background -->
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <!-- Nav -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand-dot"></span>
+        <span class="brand-text">Avaneesh Sirikonda</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact" class="pill">Contact</a>
+      </nav>
+
+      <button id="menuBtn" class="menu-btn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="mobile-menu" aria-hidden="true">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="top" class="container">
+    <section class="hero">
+      <div class="hero-left">
+        <div class="kicker">
+          <span class="chip">Robotics</span>
+          <span class="chip">CAD</span>
+          <span class="chip">Web + ML</span>
+        </div>
+
+        <h1>
+          Hi, I’m <span class="accent">Avaneesh</span>.
+        </h1>
+
+        <p class="subtitle">
+          I build practical projects across robotics, CAD, and software. I like turning ideas into working prototypes,
+          then improving them with iteration and testing.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn ghost" href="assets/resume.pdf" target="_blank" rel="noopener">Open Resume</a>
+        </div>
+
+        <div class="social">
+          <a class="social-link" href="https://github.com/Avibest" target="_blank" rel="noopener">
+            GitHub
+          </a>
+          <a class="social-link" href="mailto:asirikonda09@gmail.com">
+            Email
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-card">
+          <div class="hero-card-top">
+            <div class="badge">Currently</div>
+            <div class="small">Building hardware + software projects</div>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <div class="stat-number">5+</div>
+              <div class="stat-label">Projects shipped</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">3</div>
+              <div class="stat-label">Robotics roles</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">1</div>
+              <div class="stat-label">CAD drone build</div>
+            </div>
+          </div>
+
+          <div class="hero-note">
+            Clean, minimal design. Red accent. Simple sections. Easy to extend later.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="section-head">
+        <h2>About</h2>
+        <p class="muted">Quick overview of who I am and what I build.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Overview</h3>
+          <p>
+            I’m a student builder focused on robotics and engineering-style problem solving. I like projects where
+            I can design a system, test it, and improve it based on real constraints.
+          </p>
+          <p>
+            Right now I’m working on a CAD-designed drone platform and a Micro:bit fitness project that uses
+            sensor feedback to guide pacing across warmup, cardio, and cooldown.
+          </p>
+        </div>
+
+        <div class="grid-cards">
+          <div class="card mini">
+            <h4>Robotics mindset</h4>
+            <p class="muted">Build, test, iterate, repeat.</p>
+          </div>
+          <div class="card mini">
+            <h4>CAD + hardware</h4>
+            <p class="muted">Design parts that can actually be assembled.</p>
+          </div>
+          <div class="card mini">
+            <h4>Web + ML</h4>
+            <p class="muted">Simple interfaces that people can use.</p>
+          </div>
+          <div class="card mini">
+            <h4>Team roles</h4>
+            <p class="muted">Captain, builder, mentor.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="section-head">
+        <h2>Skills</h2>
+        <p class="muted">Tools I use often. I can expand or reorganize this later.</p>
+      </div>
+
+      <div class="skills">
+        <div class="skill-card">
+          <div class="skill-title">Languages</div>
+          <div class="skill-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Python</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-title">Web</div>
+          <div class="skill-tags">
+            <span class="tag">Bootstrap</span>
+            <span class="tag">p5.js</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-title">ML</div>
+          <div class="skill-tags">
+            <span class="tag">Teachable Machine</span>
+            <span class="tag">ml5.js</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-title">CAD + Robotics</div>
+          <div class="skill-tags">
+            <span class="tag">Fusion 360</span>
+            <span class="tag">Onshape</span>
+            <span class="tag">VEX / FLL</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-title">Workflow</div>
+          <div class="skill-tags">
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">Prototyping</span>
+            <span class="tag">Iteration</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <div class="section-head">
+        <h2>Experience</h2>
+        <p class="muted">Robotics roles and leadership.</p>
+      </div>
+
+      <div class="timeline">
+        <article class="card timeline-item">
+          <div class="timeline-top">
+            <h3>VEX Robotics</h3>
+            <span class="meta">Builder / Driver • Captain</span>
+          </div>
+          <ul class="bullets">
+            <li>Built and iterated on robot mechanisms with a focus on reliability and repeatability.</li>
+            <li>Drove in matches and helped coordinate strategy and testing.</li>
+            <li>Led build planning and supported teammates during competition prep.</li>
+          </ul>
+        </article>
+
+        <article class="card timeline-item">
+          <div class="timeline-top">
+            <h3>FIRST LEGO League</h3>
+            <span class="meta">Programmer / Builder • Innovation Project Leader</span>
+          </div>
+          <ul class="bullets">
+            <li>Developed LEGO robot behaviors and improved performance through tuning and trial runs.</li>
+            <li>Led an innovation project from idea to presentation and demo.</li>
+          </ul>
+        </article>
+
+        <article class="card timeline-item">
+          <div class="timeline-top">
+            <h3>Robotics Volunteering</h3>
+            <span class="meta">Mentor</span>
+          </div>
+          <ul class="bullets">
+            <li>Helped younger students learn building fundamentals and basic programming concepts.</li>
+            <li>Supported debugging and build organization during sessions.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p class="muted">A mix of CAD, hardware, and web projects.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Drone -->
+        <article class="project card">
+          <div class="project-media">
+            <img src="assets/drone.png" alt="Onshape CAD drone frame design" loading="lazy" />
+          </div>
+          <div class="project-body">
+            <div class="project-title-row">
+              <h3>Onshape Drone Platform</h3>
+              <span class="status">In progress</span>
+            </div>
+            <p class="muted">
+              CAD-designed drone frame intended for a school surveillance and monitoring concept.
+              Mechanical assembly and integration work is ongoing.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Onshape</span>
+              <span class="tag">CAD</span>
+              <span class="tag">Mechanical</span>
+            </div>
+            <div class="project-links">
+              <a class="link" href="#contact">Ask for details</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Micro:bit -->
+        <article class="project card">
+          <div class="project-media placeholder">
+            <div class="placeholder-inner">
+              <div class="placeholder-title">Micro:bit Project</div>
+              <div class="placeholder-sub">Add an image later</div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-title-row">
+              <h3>Micro:bit Workout Phase Coach</h3>
+              <span class="status">Prototype</span>
+            </div>
+            <p class="muted">
+              A sensor-driven workout helper built in the Micro:bit web environment. Uses a heart sensor and
+              accelerometer to guide pacing across warmup, cardio, and cooldown using on-screen messages.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Micro:bit</span>
+              <span class="tag">Sensors</span>
+              <span class="tag">UX</span>
+            </div>
+            <div class="project-links">
+              <a class="link" href="#contact">Ask for demo notes</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Cooling glove -->
+        <article class="project card">
+          <div class="project-media placeholder">
+            <div class="placeholder-inner">
+              <div class="placeholder-title">Cooling Glove</div>
+              <div class="placeholder-sub">Add an image later</div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-title-row">
+              <h3>Cooling Glove for Tendonitis</h3>
+              <span class="status">Completed</span>
+            </div>
+            <p class="muted">
+              A wearable glove prototype designed to deliver targeted cooling for tendonitis relief.
+              Modeled in CAD with a focus on comfort and practical use.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Fusion 360</span>
+              <span class="tag">Wearable</span>
+              <span class="tag">Prototype</span>
+            </div>
+            <div class="project-links">
+              <a class="link" href="#resume">See resume</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Emotion to Emoji -->
+        <article class="project card">
+          <div class="project-media placeholder">
+            <div class="placeholder-inner">
+              <div class="placeholder-title">Emotion to Emoji</div>
+              <div class="placeholder-sub">Add an image later</div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-title-row">
+              <h3>Emotion to Emoji Web App</h3>
+              <span class="status">Completed</span>
+            </div>
+            <p class="muted">
+              A web app that uses a webcam-based classifier and speech recognition to turn emotional input into
+              an emoji response for a fun interactive experience.
+            </p>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">ml5.js</span>
+              <span class="tag">Teachable Machine</span>
+            </div>
+            <div class="project-links">
+              <a class="link" href="https://github.com/Avibest" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Curved solar panel -->
+        <article class="project card">
+          <div class="project-media placeholder">
+            <div class="placeholder-inner">
+              <div class="placeholder-title">Curved Solar Panel</div>
+              <div class="placeholder-sub">Add an image later</div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-title-row">
+              <h3>Curved Solar Panel Design</h3>
+              <span class="status">Completed</span>
+            </div>
+            <p class="muted">
+              Designed and evaluated a curved solar concept to explore form factor tradeoffs and potential
+              performance benefits in compact layouts.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Design</span>
+              <span class="tag">Prototype</span>
+              <span class="tag">Iteration</span>
+            </div>
+            <div class="project-links">
+              <a class="link" href="#resume">See resume</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume" class="section">
+      <div class="section-head">
+        <h2>Resume</h2>
+        <p class="muted">Embedded PDF + download link.</p>
+      </div>
+
+      <div class="card resume-card">
+        <div class="resume-actions">
+          <a class="btn primary" href="assets/resume.pdf" download>Download Resume</a>
+          <a class="btn ghost" href="assets/resume.pdf" target="_blank" rel="noopener">Open in New Tab</a>
+        </div>
+
+        <div class="resume-embed">
+          <iframe
+            title="Resume PDF"
+            src="assets/resume.pdf"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <p class="muted tiny">
+          If the PDF does not show on mobile, use the download button.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p class="muted">Best way to reach me is email.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Let’s connect</h3>
+          <p class="muted">
+            If you want to talk about a project, robotics, or collaborating on something, send a message.
+          </p>
+
+          <div class="contact-list">
+            <div class="contact-row">
+              <span class="label">Email</span>
+              <a class="value" href="mailto:asirikonda09@gmail.com">asirikonda09@gmail.com</a>
+            </div>
+            <div class="contact-row">
+              <span class="label">GitHub</span>
+              <a class="value" href="https://github.com/Avibest" target="_blank" rel="noopener">github.com/Avibest</a>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="mailto:asirikonda09@gmail.com?subject=Portfolio%20Contact">Email Me</a>
+            <a class="btn ghost" href="https://github.com/Avibest" target="_blank" rel="noopener">View GitHub</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Quick note</h3>
+          <p class="muted">
+            I have not set up LinkedIn yet. When you do, tell me the link and I will add it everywhere
+            (hero, footer, contact).
+          </p>
+
+          <div class="divider"></div>
+
+          <p class="muted tiny">
+            Want a cleaner projects section with filters, search, and modal popups? I can add that next.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="muted tiny">© <span id="year"></span> Avaneesh Sirikonda</div>
+        <div class="footer-links">
+          <a href="#top">Top</a>
+          <a href="#projects">Projects</a>
+          <a href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
