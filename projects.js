@@ -58,7 +58,6 @@ var PROJECTS = [
   title: "Emotion to Emoji Web App",
   status: "Completed",
   image: "assets/emoji.png",
-  link: "https://avibest.github.io/Project-112/",
   description:
     "Personal web project built with HTML, CSS, and JavaScript. Uses a webcam-based Teachable Machine model to recognize hand gestures and map them to emoji outputs in real time.",
   tags: ["JavaScript", "HTML", "CSS", "Teachable Machine", "ML"],
