@@ -65,14 +65,6 @@ export function modalTemplate(project) {
           <p>${escapeHtml(project.description)}</p>
           <div class="project-tags">${tags}</div>
           <ul class="modal-bullets">${bullets}</ul>
-
-          ${project.link ? `
-          <div class="modal-actions">
-          <a href="${project.link}" target="_blank" rel="noopener noreferrer" class="modal-cta">
-            Open Live Site ↗
-          </a>  
-          </div>
-        ` : ""}
         </div>
       </div>
     </div>
