@@ -88,6 +88,7 @@ var PROJECTS = [
   }
 ];
 
+
 var currentFilter = "all";
 
 export function renderProjects() {
