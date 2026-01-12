@@ -1,82 +1,89 @@
 import { openModal } from "./modal.js";
 import { modalTemplate } from "./modal.js";
 
-/**
- * Project data lives here (easy to edit).
- * Links under cards removed as requested.
- */
 var PROJECTS = [
   {
     id: "drone",
-    title: "Onshape Drone Platform",
+    title: "Autonomous Campus Drone Platform",
     status: "In progress",
-    image: "cad_drone.png",
+    image: "assets/drone.png",
     description:
-      "CAD-designed drone frame intended for a school surveillance and monitoring concept. Mechanical assembly and integration work is ongoing.",
-    tags: ["Onshape", "CAD", "Mechanical"],
+      "CAD-designed drone platform developed for a club project focused on autonomous monitoring across the IMSA campus. The frame is designed to support computer vision and machine learning workflows by accounting for onboard sensing, compute, and power constraints.",
+    tags: ["Onshape", "CAD", "Robotics", "ML Systems"],
     categories: ["cad", "hardware"],
     bullets: [
-      "Designed a lightweight quad-frame layout with motor mount points and central electronics bay.",
-      "Focused on mechanical practicality (fasteners, spacing, and assembly flow).",
-      "Currently working on assembling and validating the physical build."
+      "Designed a quadcopter frame in Onshape with mounting support for a camera, thermal imaging module, and onboard electronics.",
+      "Planned component placement to support machine-learning–based activity detection while maintaining structural balance and clear wiring paths.",
+      "Accounted for payload weight, sensor placement, and future expansion during frame design.",
+      "Currently transitioning from CAD to physical assembly and mechanical validation."
     ]
   },
+
   {
     id: "microbit",
     title: "Micro:bit Workout Phase Coach",
     status: "Prototype",
     image: null,
     description:
-      "A sensor-driven workout helper built in the Micro:bit web environment. Uses a heart sensor and accelerometer to guide pacing across warmup, cardio, and cooldown using on-screen messages.",
-    tags: ["Micro:bit", "Sensors", "UX"],
-    categories: ["hardware"],
+      "A sensor-based fitness system that uses heart-rate and motion data to guide pacing across warmup, cardio, and cooldown phases. Built using Python-based machine learning and deployed on a Micro:bit for real-time feedback.",
+    tags: ["Python", "Machine Learning", "Micro:bit", "Sensors"],
+    categories: ["hardware", "ml"],
     bullets: [
-      "Reads heart sensor values and motion (accelerometer) signals during exercise.",
-      "Uses phase logic (warmup/cardio/cooldown) and feedback to tell the user to speed up or slow down.",
-      "Built entirely in the Micro:bit website environment."
+      "Collected heart sensor and accelerometer data during exercise sessions and segmented data by workout phase.",
+      "Trained a Python machine-learning model to learn typical heart-rate patterns for warmup, cardio, and cooldown.",
+      "Used the trained model to generate real-time on-screen feedback telling the user to speed up or slow down.",
+      "Implemented the full system using the Micro:bit development environment."
     ]
   },
+
   {
     id: "glove",
     title: "Cooling Glove for Tendonitis",
     status: "Completed",
     image: null,
     description:
-      "A wearable glove prototype designed to deliver targeted cooling for tendonitis relief. Modeled with a focus on comfort and practical use.",
-    tags: ["Fusion 360", "Wearable", "Prototype"],
+      "Innovation project developed for FIRST LEGO League focused on assisting musicians with tendonitis. The solution is a cooling glove connected to an external power unit designed to reduce strain during extended playing sessions.",
+    tags: ["Fusion 360", "Product Design", "Research", "Prototype"],
     categories: ["cad", "hardware"],
     bullets: [
-      "Designed a wearable form factor with practical placement for cooling elements.",
-      "Prioritized comfort, fit, and real-world usability during design iteration."
+      "Led the innovation project as team leader, defining the problem scope and guiding the solution design.",
+      "Designed a cooling glove prototype in Fusion 360 connected to an external cooling unit.",
+      "Conducted outreach to professional musicians and manufacturers to evaluate feasibility and real-world usefulness.",
+      "Used feedback to validate the concept and present it as a realistic, implementable solution during competition."
     ]
   },
+
   {
     id: "emotion",
     title: "Emotion to Emoji Web App",
     status: "Completed",
     image: null,
     description:
-      "A web app that uses a webcam-based classifier and speech recognition to turn emotional input into an emoji response for an interactive experience.",
-    tags: ["JavaScript", "ml5.js", "Teachable Machine"],
+      "Personal web project built to explore machine learning through interactive interfaces. The app uses a webcam-based model to recognize hand gestures and map them to emoji outputs in real time.",
+    tags: ["JavaScript", "HTML", "CSS", "Teachable Machine", "ML"],
     categories: ["web", "ml"],
     bullets: [
-      "Used a webcam model to classify expressions and map them to emoji output.",
-      "Integrated speech recognition for a more interactive user flow.",
-      "Focused on a simple UI that responds instantly to the user."
+      "Collected gesture data and trained a classification model using Teachable Machine.",
+      "Integrated the trained model into a browser-based application using JavaScript.",
+      "Built a webcam-driven interface that classifies gestures in real time and displays corresponding emojis.",
+      "Focused on understanding the full ML pipeline from data collection to deployment."
     ]
   },
+
   {
     id: "solar",
     title: "Curved Solar Panel Design",
     status: "Completed",
     image: null,
     description:
-      "Designed and evaluated a curved solar concept to explore form factor tradeoffs and potential performance benefits in compact layouts.",
-    tags: ["Design", "Prototype", "Iteration"],
+      "Innovation project exploring improved solar energy collection through a curved panel design. The concept addresses energy loss caused by flat panels only receiving optimal sunlight for limited hours per day.",
+    tags: ["Engineering Design", "Renewable Energy", "Research"],
     categories: ["hardware"],
     bullets: [
-      "Explored geometry tradeoffs and packaging constraints.",
-      "Iterated on a design concept for practical mounting and compact use."
+      "Contributed to the concept development and technical justification for a curved solar panel design.",
+      "Analyzed how curvature could increase total sunlight exposure across more hours of the day.",
+      "Contacted manufacturers to evaluate feasibility, manufacturability, and real-world constraints.",
+      "Refined the concept based on feedback to ensure practicality and realistic implementation."
     ]
   }
 ];
