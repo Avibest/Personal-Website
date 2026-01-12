@@ -52,41 +52,38 @@ var PROJECTS = [
       "Used the feedback to validate the concept and present it during competition."
     ]
   },
-
-{
-  id: "emotion",
-  title: "Emotion to Emoji Web App",
-  status: "Completed",
-  image: "assets/emoji.png",
-  link: "https://avibest.github.io/Project-112/",
-  description:
+  {
+    id: "emotion",
+    title: "Emotion to Emoji Web App",
+    status: "Completed",
+    image: "assets/emoji.png",
+    link: "https://avibest.github.io/Project-112/",
+    description:
     "Personal web project built with HTML, CSS, and JavaScript. Uses a webcam-based Teachable Machine model to recognize hand gestures and map them to emoji outputs in real time.",
-  tags: ["JavaScript", "HTML", "CSS", "Teachable Machine", "ML"],
-  categories: ["web", "ml"],
-  bullets: [
+    tags: ["JavaScript", "HTML", "CSS", "Teachable Machine", "ML"],
+    categories: ["web", "ml"],
+    bullets: [
     "Collected gesture data and trained a classification model using Teachable Machine.",
     "Integrated the trained model into a browser-based application using JavaScript.",
     "Built a webcam-driven interface that classifies gestures in real time and displays corresponding emojis."
   ]
-}
-
-  {
-    id: "solar",
-    title: "Curved Solar Panel Design",
-    status: "Completed",
-    image: "assets/panel.png",
-    description:
-      "Innovation project exploring improved solar energy collection through a curved panel concept. The design addresses energy loss caused by flat panels only receiving optimal sunlight for limited hours per day.",
-    tags: ["Engineering Design", "Renewable Energy", "Research"],
-    categories: ["hardware"],
-    bullets: [
-      "Helped develop the concept and technical justification for a curved solar panel design.",
-      "Evaluated how curvature can increase total sunlight exposure across more hours of the day.",
-      "Contacted manufacturers to discuss feasibility and real-world constraints.",
-      "Refined the concept based on feedback to keep it practical and implementable."
-    ]
-  }
-];
+},
+{
+  id: "solar",
+  title: "Curved Solar Panel Design",
+  status: "Completed",
+  image: "assets/panel.png",
+  description:
+    "Innovation project exploring improved solar energy collection through a curved panel concept. The design addresses energy loss caused by flat panels only receiving optimal sunlight for limited hours per day.",
+  tags: ["Engineering Design", "Renewable Energy", "Research"],
+  categories: ["hardware"],
+  bullets: [
+    "Helped develop the concept and technical justification for a curved solar panel design.",
+    "Evaluated how curvature can increase total sunlight exposure across more hours of the day.",
+    "Contacted manufacturers to discuss feasibility and real-world constraints.",
+    "Refined the concept based on feedback to keep it practical and implementable."
+  ]
+};
 
 var currentFilter = "all";
 
