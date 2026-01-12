@@ -10,7 +10,7 @@ var PROJECTS = [
     id: "drone",
     title: "Onshape Drone Platform",
     status: "In progress",
-    image: "assets/drone.png",
+    image: "cad_drone.png",
     description:
       "CAD-designed drone frame intended for a school surveillance and monitoring concept. Mechanical assembly and integration work is ongoing.",
     tags: ["Onshape", "CAD", "Mechanical"],
