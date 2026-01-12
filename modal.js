@@ -27,8 +27,13 @@ export function closeModal() {
 }
 
 export function modalTemplate(project) {
-  var media = project.image
-    ? `<img src="${project.image}" alt="${escapeHtml(project.title)}" />`
+  var imageUrl = null;
+  if (project.image) {
+    imageUrl = new URL(project.image, window.location.href).toString();
+  }
+
+  var media = imageUrl
+    ? `<img src="${imageUrl}" alt="${escapeHtml(project.title)}" />`
     : `<div class="placeholder" style="height:100%;">
          <div class="placeholder-inner">
            <div class="placeholder-title">${escapeHtml(project.title)}</div>
