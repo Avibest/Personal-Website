@@ -6,7 +6,7 @@ var PROJECTS = [
     id: "drone",
     title: "Autonomous Campus Drone Platform",
     status: "In progress",
-    image: "cad_drone.png",
+    image: "assets/cad_drone.png",
     description:
       "CAD-designed drone platform developed for a club project focused on autonomous monitoring across the IMSA campus. The frame is designed to support computer vision and machine learning workflows by accounting for onboard sensing, compute, and power constraints.",
     tags: ["Onshape", "CAD", "Robotics", "ML Systems"],
