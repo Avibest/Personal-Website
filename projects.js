@@ -53,21 +53,22 @@ var PROJECTS = [
     ]
   },
 
-  {
-    id: "emotion",
-    title: "Emotion to Emoji Web App",
-    status: "Completed",
-    image: "assets/emoji.png",
-    description:
-      "Personal web project built with HTML, CSS, and JavaScript. Uses a webcam-based Teachable Machine model to recognize hand gestures and map them to emoji outputs in real time.",
-    tags: ["JavaScript", "HTML", "CSS", "Teachable Machine", "ML"],
-    categories: ["web", "ml"],
-    bullets: [
-      "Collected gesture data and trained a classification model using Teachable Machine.",
-      "Integrated the trained model into a browser-based application using JavaScript.",
-      "Built a webcam-driven interface that classifies gestures in real time and displays corresponding emojis."
-    ]
-  },
+{
+  id: "emotion",
+  title: "Emotion to Emoji Web App",
+  status: "Completed",
+  image: "assets/emoji.png",
+  link: "https://avibest.github.io/Project-112/",
+  description:
+    "Personal web project built with HTML, CSS, and JavaScript. Uses a webcam-based Teachable Machine model to recognize hand gestures and map them to emoji outputs in real time.",
+  tags: ["JavaScript", "HTML", "CSS", "Teachable Machine", "ML"],
+  categories: ["web", "ml"],
+  bullets: [
+    "Collected gesture data and trained a classification model using Teachable Machine.",
+    "Integrated the trained model into a browser-based application using JavaScript.",
+    "Built a webcam-driven interface that classifies gestures in real time and displays corresponding emojis."
+  ]
+}
 
   {
     id: "solar",
