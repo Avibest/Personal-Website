@@ -13,7 +13,7 @@ var PROJECTS = [
     categories: ["cad", "hardware"],
     bullets: [
       "Designed a quadcopter frame in Onshape with mounting support for a camera, thermal imaging module, and onboard electronics.",
-      "Planned component placement to support machine-learning–based activity detection while maintaining structural balance and clear wiring paths.",
+      "Planned component placement to support ML-based activity detection while maintaining structural balance and clear wiring paths.",
       "Accounted for payload weight, sensor placement, and future expansion during frame design.",
       "Currently transitioning from CAD to physical assembly and mechanical validation."
     ]
@@ -23,14 +23,14 @@ var PROJECTS = [
     id: "microbit",
     title: "Micro:bit Workout Phase Coach",
     status: "Prototype",
-    image: null,
+    image: "assets/bit.png",
     description:
       "A sensor-based fitness system that uses heart-rate and motion data to guide pacing across warmup, cardio, and cooldown phases. Built using Python-based machine learning and deployed on a Micro:bit for real-time feedback.",
     tags: ["Python", "Machine Learning", "Micro:bit", "Sensors"],
     categories: ["hardware", "ml"],
     bullets: [
       "Collected heart sensor and accelerometer data during exercise sessions and segmented data by workout phase.",
-      "Trained a Python machine-learning model to learn typical heart-rate patterns for warmup, cardio, and cooldown.",
+      "Trained a Python ML model to learn typical heart-rate patterns for warmup, cardio, and cooldown.",
       "Used the trained model to generate real-time on-screen feedback telling the user to speed up or slow down.",
       "Implemented the full system using the Micro:bit development environment."
     ]
@@ -40,16 +40,16 @@ var PROJECTS = [
     id: "glove",
     title: "Cooling Glove for Tendonitis",
     status: "Completed",
-    image: null,
+    image: "assets/glove.png",
     description:
       "Innovation project developed for FIRST LEGO League focused on assisting musicians with tendonitis. The solution is a cooling glove connected to an external power unit designed to reduce strain during extended playing sessions.",
     tags: ["Fusion 360", "Product Design", "Research", "Prototype"],
     categories: ["cad", "hardware"],
     bullets: [
-      "Led the innovation project as team leader, defining the problem scope and guiding the solution design.",
+      "Led the innovation project, defining the problem scope and guiding the solution design.",
       "Designed a cooling glove prototype in Fusion 360 connected to an external cooling unit.",
-      "Conducted outreach to professional musicians and manufacturers to evaluate feasibility and real-world usefulness.",
-      "Used feedback to validate the concept and present it as a realistic, implementable solution during competition."
+      "Reached out to professional musicians and manufacturers to evaluate feasibility and real-world usefulness.",
+      "Used the feedback to validate the concept and present it during competition."
     ]
   },
 
@@ -57,16 +57,15 @@ var PROJECTS = [
     id: "emotion",
     title: "Emotion to Emoji Web App",
     status: "Completed",
-    image: null,
+    image: "assets/emoji.png",
     description:
-      "Personal web project built to explore machine learning through interactive interfaces. The app uses a webcam-based model to recognize hand gestures and map them to emoji outputs in real time.",
+      "Personal web project built with HTML, CSS, and JavaScript. Uses a webcam-based Teachable Machine model to recognize hand gestures and map them to emoji outputs in real time.",
     tags: ["JavaScript", "HTML", "CSS", "Teachable Machine", "ML"],
     categories: ["web", "ml"],
     bullets: [
       "Collected gesture data and trained a classification model using Teachable Machine.",
       "Integrated the trained model into a browser-based application using JavaScript.",
-      "Built a webcam-driven interface that classifies gestures in real time and displays corresponding emojis.",
-      "Focused on understanding the full ML pipeline from data collection to deployment."
+      "Built a webcam-driven interface that classifies gestures in real time and displays corresponding emojis."
     ]
   },
 
@@ -74,20 +73,19 @@ var PROJECTS = [
     id: "solar",
     title: "Curved Solar Panel Design",
     status: "Completed",
-    image: null,
+    image: "assets/panel.png",
     description:
-      "Innovation project exploring improved solar energy collection through a curved panel design. The concept addresses energy loss caused by flat panels only receiving optimal sunlight for limited hours per day.",
+      "Innovation project exploring improved solar energy collection through a curved panel concept. The design addresses energy loss caused by flat panels only receiving optimal sunlight for limited hours per day.",
     tags: ["Engineering Design", "Renewable Energy", "Research"],
     categories: ["hardware"],
     bullets: [
-      "Contributed to the concept development and technical justification for a curved solar panel design.",
-      "Analyzed how curvature could increase total sunlight exposure across more hours of the day.",
-      "Contacted manufacturers to evaluate feasibility, manufacturability, and real-world constraints.",
-      "Refined the concept based on feedback to ensure practicality and realistic implementation."
+      "Helped develop the concept and technical justification for a curved solar panel design.",
+      "Evaluated how curvature can increase total sunlight exposure across more hours of the day.",
+      "Contacted manufacturers to discuss feasibility and real-world constraints.",
+      "Refined the concept based on feedback to keep it practical and implementable."
     ]
   }
 ];
-
 
 var currentFilter = "all";
 
