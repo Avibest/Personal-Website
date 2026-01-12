@@ -761,6 +761,30 @@ h1{
   padding: 16px;
 }
 
+.modal-actions{
+  margin-top: 16px;
+}
+
+.modal-cta{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ff3b3b, #ff6b6b);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.modal-cta:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(255, 59, 59, 0.35);
+  opacity: 0.95;
+}
+
 @media (max-width: 680px){
   .modal-body{ grid-template-columns: 1fr; }
   .modal-media{
