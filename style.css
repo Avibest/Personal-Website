@@ -567,21 +567,25 @@ h1{
   z-index: 999;
 }
 .modal-root.show{ display: grid; }
+
 .modal-backdrop{
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.72);
   backdrop-filter: blur(8px);
 }
+
 .modal{
   position: relative;
   width: min(920px, 100%);
+  max-height: 86vh;              
   border-radius: 20px;
   border: 1px solid rgba(255,255,255,0.12);
   background: rgba(14, 15, 20, 0.88);
   box-shadow: 0 24px 80px rgba(0,0,0,0.65);
-  overflow: hidden;
+  overflow: hidden;               
 }
+
 .modal-top{
   display: flex;
   justify-content: space-between;
@@ -590,12 +594,22 @@ h1{
   padding: 14px 16px;
   border-bottom: 1px solid rgba(255,255,255,0.10);
 }
+
 .modal-title{
   display: flex;
   gap: 12px;
   align-items: center;
+  min-width: 0;
 }
-.modal-title h3{ margin: 0; font-size: 16px; }
+.modal-title h3{
+  margin: 0;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 520px;
+}
+
 .modal-close{
   width: 42px;
   height: 42px;
@@ -606,15 +620,19 @@ h1{
   cursor: pointer;
 }
 .modal-close:hover{ background: rgba(255,255,255,0.06); }
+
 .modal-body{
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-columns: 1.15fr 0.85fr;
   gap: 0;
+  max-height: calc(86vh - 60px);   
+  overflow: hidden;
 }
+
 .modal-media{
-  min-height: 320px;
   background: rgba(255,255,255,0.02);
   border-right: 1px solid rgba(255,255,255,0.10);
+  overflow: hidden;
 }
 .modal-media img{
   width: 100%;
@@ -622,20 +640,39 @@ h1{
   object-fit: cover;
   display: block;
 }
+
 .modal-content{
   padding: 16px;
+  overflow-y: auto;               
 }
+
 .modal-content p{
   margin: 10px 0;
   line-height: 1.65;
   color: var(--muted);
 }
+
 .modal-bullets{
   margin: 12px 0 0 18px;
   color: var(--muted);
   line-height: 1.65;
 }
 .modal-bullets li{ margin: 6px 0; }
+
+@media (max-width: 680px){
+  .modal{ max-height: 90vh; }
+  .modal-body{
+    grid-template-columns: 1fr;
+    max-height: calc(90vh - 60px);
+  }
+  .modal-media{
+    border-right: 0;
+    border-bottom: 1px solid rgba(255,255,255,0.10);
+    min-height: 220px;
+  }
+  .modal-title h3{ max-width: 240px; }
+}
+
 
 /* Responsive */
 @media (max-width: 1100px){
