@@ -62,11 +62,12 @@ var PROJECTS = [
     "Personal web project built with HTML, CSS, and JavaScript. Uses a webcam-based Teachable Machine model to recognize hand gestures and map them to emoji outputs in real time.",
   tags: ["JavaScript", "HTML", "CSS", "Teachable Machine", "ML"],
   categories: ["web", "ml"],
-  bullets: [
-    "Collected gesture data and trained a classification model using Teachable Machine.",
-    "Integrated the trained model into a browser-based application using JavaScript.",
-    "Built a webcam-driven interface that classifies gestures in real time and displays corresponding emojis."
-  ]
+bullets: [
+  "Collected gesture data and trained a classification model using Teachable Machine.",
+  'Integrated the trained model into a browser-based application using JavaScript — <a href="https://avibest.github.io/Project-112/" target="_blank" rel="noopener noreferrer">try it live</a>.',
+  "Built a webcam-driven interface that classifies gestures in real time and displays corresponding emojis."
+]
+
 }
 
   {
