@@ -6,7 +6,6 @@ export function openModal(html) {
   root.classList.add("show");
   root.setAttribute("aria-hidden", "false");
 
-  // Close handlers
   var backdrop = root.querySelector("[data-close='backdrop']");
   var closeBtn = root.querySelector("[data-close='button']");
   var escHandler = function (e) {
@@ -17,8 +16,6 @@ export function openModal(html) {
   if (closeBtn) closeBtn.addEventListener("click", closeModal);
   window.addEventListener("keydown", escHandler, { once: true });
 
-  // Prevent body scroll
-  document.body.style.overflow = "hidden";
 }
 
 export function closeModal() {
@@ -27,7 +24,6 @@ export function closeModal() {
   root.classList.remove("show");
   root.setAttribute("aria-hidden", "true");
   root.innerHTML = "";
-  document.body.style.overflow = "";
 }
 
 export function modalTemplate(project) {
